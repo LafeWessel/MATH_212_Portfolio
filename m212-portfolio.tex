@@ -1,0 +1,176 @@
+\documentclass[11pt,titlepage]{article}		% The percent symbol in your code starts a comment.  The comment ends at the next linebreak.
+
+\usepackage[english]{babel} 		% Packages add functionality and style conventions to your documents. Don't edit this section!
+\usepackage{fullpage}				% Eliminates wasted space
+\usepackage[utf8]{inputenc}			% Necessary for character encoding
+\usepackage{amsmath, amssymb,amsthm}% Required math packages
+\usepackage{graphicx}				% For handling graphics
+\usepackage[colorinlistoftodos]{todonotes}	% For the fancy "todo" stuff
+\usepackage{hyperref}				% For clickable links in the final PDF
+%\usepackage{titling}				% To take less space at the top of the page with the title
+%\setlength{\droptitle}{-2cm}
+%\pretitle{\Large\scshape}%{\begin{flushright}\Large\scshape}
+%\posttitle{\par\end{flushright}}
+%\preauthor{\large\scshape}
+%\postauthor{\par\end{flushright}}
+%\predate{\large\scshape}
+%\postdate{\par\end{flushright}}
+\linespread{1.5}
+
+\newcommand{\set}[1]{\left\{ {#1} \right\}}
+\newcommand{\setof}[2]{{\left\{#1\,\colon\,#2\right\}}}
+
+\def\rubric{\textbf{Evaluation:} \makebox[0.75in]{\hrulefill}
+
+\vspace{.3in}
+
+\textbf{Opening:} \makebox[0.75in]{\hrulefill}
+
+\vspace{.3in}
+
+\textbf{Logical Correctness:} \makebox[0.75in]{\hrulefill}
+
+\vspace{.3in}
+
+\textbf{Reasons:} \makebox[0.75in]{\hrulefill}
+
+\vspace{.3in}
+
+\textbf{Use of Notation:} \makebox[0.75in]{\hrulefill}
+
+\vspace{.3in}
+
+\textbf{Clarity and Writing:} \makebox[0.75in]{\hrulefill}
+
+\vspace{.3in}
+
+\textbf{\LaTeX\ Formatting:} \makebox[0.75in]{\hrulefill}
+
+\vspace{.3in}
+
+\textbf{Stating the Conclusion:} \makebox[0.75in]{\hrulefill}
+
+\vspace{.3in}
+
+\textbf{Other Comments:}
+
+\vspace{1in}
+
+}
+
+% Type `\C' for the complex numbers, `\H' for the quarternions, etc.
+\def\C{{\mathbb C}}
+\def\H{{\mathbb H}}
+\def\Z{{\mathbb Z}}
+\def\Q{{\mathbb Q}}
+\def\R{{\mathbb R}}
+\def\N{{\mathbb N}}
+
+
+%\Alpha{homeworkresults}
+
+\theoremstyle{theorem}
+\newtheorem{theorem}{Theorem}
+\renewcommand*{\thetheorem}{\Roman{theorem}}
+%\setcounter{theorem}{2}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{prop}[theorem]{Proposition}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+
+
+
+\title{\sc Math 212 Portfolio}
+
+\author{Lafe Wessel}
+
+\date{Draft date: \today}
+
+\begin{document}
+
+\maketitle
+
+
+\noindent\textbf{Changelog:} \emph{List the changes you've made since the last draft, with special attention paid to problems that have received significant revisions since the last draft (i.e., more than fixing typos). If there is any additional information you'd like me to consider as I review this submission, please say so now.}
+
+\begin{enumerate}
+\item Reworked Conjectures I.1-I.4
+\end{enumerate}
+
+\noindent\textbf{Instructions:} Each of the problems below is/will be presented as a conjecture. Each conjecture asks you to prove or disprove the conjecture, possibly along with some additional directions. 
+
+\bigskip
+
+\begin{itemize}  
+	\item If the conjecture is true, your job is to write a complete proof for the proposition. If there are multiple parts, you should consider each part in turn.
+	\item If it is false, you should provide a counterexample plus make reasonable modifications to the stated conjecture so that a new proposition is true. Then, write a complete proof of your new proposition. You may want to run your new proposition by me before trying to write a proof--this is allowed and encouraged!
+\end{itemize}
+
+
+\noindent\textbf{Academic Honesty Policy:}
+The portfolio is an independent project in which no outside resources or collaboration is allowed. You may not ask other professors or discuss the problems with anyone besides me. You should not discuss even which problem you chose. Violation of this policy is grounds for failing the course. The point is that you need to be confident and competent in writing proofs for future courses.
+
+
+
+
+
+
+\clearpage
+
+\begin{conjecture}
+	Let $A$ and $B$ be subsets of some universe $\mathcal{U}$.
+	Then:
+	\begin{enumerate}
+		\item $A\setminus (A\cap \overline{B}) = A\cap B$
+		\item $\overline{(\overline{A}\cup B)} \cap A = A\setminus B$
+		\item $(A\cup B)\setminus A = B\setminus A$
+		\item $(A\cup B) \setminus B = A\setminus (A\cap B)$
+	\end{enumerate}
+\end{conjecture}
+
+Conjecture I.1.
+\begin{proof}
+Let $x\in A\setminus{(A \cap\overline{B})}$. Thus, $x$ must be an element of $A$ and not an element of $A\cap\overline{B}$, that is $x\in A$ and $x\not\in A\cap\overline{B}$. If $x$ is not in $A\cap\overline{B}$, then $x$ must not be in $\overline{B}$, meaning $x\in B$. Thus, $x\in A\cap B$, and, furthermore, $A\setminus{(A\cap\overline{B})}\subseteq A\cap B$.
+
+Let $x\in A\cap B$. For this to be true, $x$ must be in both $A$ and $B$; $x\in A$ and $x\in B$. Thus, $x$ cannot be in the complement of $B$, $\overline{B}$. Since $x\not\in\overline{B}$, $x\not\in A\cap\overline{B}$. Because $x\in A$ and $x\not\in A\cap\overline{B}$, $x \in A\setminus{(A\cap\overline{B})}$. Thus, $A\cap B \subseteq A\setminus{(A\cap\overline{B})}$.
+
+Therefore, since $A\setminus{(A\cap\overline{B})}\subseteq A\cap B$ and $A\cap B \subseteq A\setminus{(A\cap\overline{B})}$, $A\setminus{(A\cap\overline{B})} = A\cap B$.
+\end{proof}
+
+Conjecture I.2
+\begin{proof}
+Let $x \in \overline{(\overline{A}\cup B)}\cap A$. Thus, $x \in A$ and $ x\in \overline{(\overline{A}\cup B)}$. This means that $x$ is not in the complement of $\overline{(\overline{A}\cup B)}$, which is $\overline{A} \cup B$. Thus, $x\not\in\overline{A}\cup B$. Consequently, $x \not\in \overline{A}$ and $x\not\in B$. If $x \not\in\overline{A}$, then $x\in A$. Since $x\in A$ and $x\not\in B$, $x\in A\setminus B$. Thus, if $x \in A\setminus B$ and $x \in \overline{(\overline{A}\cup B)}\cap A$, $\overline{(\overline{A}\cup B)}\cap A \subseteq A \setminus B$.
+
+Let $x \in A\setminus B$. If this is true, then $x \in A$ and $x\not\in B$. It follows that $x\not\in\overline{A}$ and, consequently, that $x\not\in\overline{A}\cup B$. If $x\not\in\overline{A}\cup B$, then $x$ must be in the complement, being $\overline{(\overline{A}\cup B)}$. Since $x \in A$ and $x \in \overline{(\overline{A}\cup B)}$, then $x\in \overline{(\overline{A}\cup B)}\cap A$. Thus, $A\setminus B \subseteq \overline{(\overline{A}\cup B)}\cap A$.
+
+Therefore, since $\overline{(\overline{A}\cup B)}\cap A \subseteq A \setminus B$ and $A\setminus B \subseteq \overline{(\overline{A}\cup B)}\cap A$, $\overline{(\overline{A}\cup B)}\cap A = A \setminus B$.
+\end{proof}
+
+Conjecture I.3
+\begin{proof}
+Let $x\in (A \cup B)\setminus A$. For $x$ to be an element, it must be in $A\cup B$ and not in $A$. Thus, $x\in A\cup B$ and $x\not\in A$. Since $x\not\in A$, $x$ must be a part of $B$ for $A\cup B$ to be true: $x\in B$. If $x\not\in A$ and $x\in B$, then $x\in B\setminus A$. If $x\in (A \cup B)\setminus A$ and $x\in B\setminus A$, then $(A \cup B)\setminus A \subseteq B \setminus A$.
+
+Let $x\in B\setminus A$. Thus, $x$ must be in $B$ and not in $A$. Accordingly, $x\in B$ and $x\not\in A$. It follows that $x \in A\cup B$, and, consequently, that $x \in (A \cup B)\setminus A$ since $x \not \in A$. Thus, because $x\in B \setminus A$ and $x \in (A \cup B)\setminus A$, $B\setminus A \subseteq (A\cup B)\setminus A$.
+
+Therefore, since $(A \cup B)\setminus A \subseteq B \setminus A$ and $B\setminus A \subseteq (A\cup B)\setminus A$, $(A \cup B)\setminus A = B \setminus A$.
+\end{proof}
+
+Conjecture I.4
+\begin{proof}
+Let $x \in (A \cup B) \setminus B$. It follows that $x \in A\cup B$ and $x\not\in B$. This means that $x\in A$ since $x\in A\cup B$ is true. Thus, $x\not\in A\cap B$. Because $x\in A$ and $x\not\in A \cap B$, $x\in A\setminus (A\cap B)$ is true. Thus, since $x\in (A \cup B) \setminus B$ and $x\in A\setminus (A\cap B)$, $ (A\cup B) \setminus B \subseteq A\setminus (A \cap B)$.
+
+Let $x \in A\setminus(A\cap B)$. Thus, $x \in A$ and $x \not \in A \cap B$, meaning that $x \not\in B$. If follows that $x \in A \cup B$ and, since $x \not \in B$, $ x\in (A \cup B)\setminus B$ are both true. Thus, if $x \in A\setminus(A\cap B)$ and $ x\in (A \cup B)\setminus B$ are true, then $A\setminus(A\cap B) \subseteq (A \cup B)\setminus B$ is true.
+
+Therefore, since $ (A\cup B) \setminus B \subseteq A\setminus (A \cap B)$ and $A\setminus(A\cap B) \subseteq (A \cup B)\setminus B$ are true, it must be true that$ (A\cup B) \setminus B = A\setminus (A \cap B)$.
+\end{proof}
+
+
+\rubric
+
+
+
+
+
+\end{document}
