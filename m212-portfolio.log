@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.16)  16 FEB 2021 21:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.16)  17 FEB 2021 19:05
 entering extended mode
 **./m212-portfolio.tex
 (m212-portfolio.tex
@@ -827,8 +827,8 @@ Package rerunfilecheck Info: File `m212-portfolio.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  18110 strings out of 479618
- 349925 string characters out of 2857863
- 646520 words of memory out of 3000000
+ 350039 string characters out of 2857863
+ 644520 words of memory out of 3000000
  34892 multiletter control sequences out of 15000+200000
  411527 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -845,7 +845,7 @@ essel - Laptop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
 12.pfb><C:/Users/Lafe Wessel - Laptop/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmsy10.pfb><C:/Users/Lafe Wessel - Laptop/AppData/Local/Pro
 grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on m212-portfolio.pdf (5 pages, 118588 bytes).
+Output written on m212-portfolio.pdf (5 pages, 118743 bytes).
 PDF statistics:
  98 PDF objects out of 1000 (max. 8388607)
  11 named destinations out of 1000 (max. 500000)
