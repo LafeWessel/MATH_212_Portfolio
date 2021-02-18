@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.16)  17 FEB 2021 19:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.16)  17 FEB 2021 19:12
 entering extended mode
 **./m212-portfolio.tex
 (m212-portfolio.tex
@@ -818,16 +818,18 @@ dfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.120 \clearpage
+l.121 \clearpage
                  [1] [2
 
-] [3] [4] (m212-portfolio.aux)
+] [3] [4
+
+] [5] (m212-portfolio.aux)
 Package rerunfilecheck Info: File `m212-portfolio.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 18110 strings out of 479618
- 350039 string characters out of 2857863
+ 18113 strings out of 479618
+ 350060 string characters out of 2857863
  644520 words of memory out of 3000000
  34892 multiletter control sequences out of 15000+200000
  411527 words of font info for 57 fonts, out of 3000000 for 9000
@@ -840,14 +842,17 @@ ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users
 /Lafe Wessel - Laptop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
 /cm/cmcsc10.pfb><C:/Users/Lafe Wessel - Laptop/AppData/Local/Programs/MiKTeX/fo
 nts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Lafe Wessel - Laptop/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Lafe W
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Lafe W
 essel - Laptop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
-12.pfb><C:/Users/Lafe Wessel - Laptop/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmsy10.pfb><C:/Users/Lafe Wessel - Laptop/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on m212-portfolio.pdf (5 pages, 118743 bytes).
+10.pfb><C:/Users/Lafe Wessel - Laptop/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmr12.pfb><C:/Users/Lafe Wessel - Laptop/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Lafe Wessel - L
+aptop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><
+C:/Users/Lafe Wessel - Laptop/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/symbols/msbm10.pfb>
+Output written on m212-portfolio.pdf (6 pages, 133632 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 11 named destinations out of 1000 (max. 500000)
+ 113 PDF objects out of 1000 (max. 8388607)
+ 14 named destinations out of 1000 (max. 500000)
  109 words of extra memory for PDF output out of 10000 (max. 10000000)
 
