@@ -96,8 +96,8 @@
 \noindent\textbf{Changelog:} \emph{List the changes you've made since the last draft, with special attention paid to problems that have received significant revisions since the last draft (i.e., more than fixing typos). If there is any additional information you'd like me to consider as I review this submission, please say so now.}
 
 \begin{enumerate}
-\item Reworked Conjectures I.1-I.4
-\item Added Conjecture II
+\item Reworked Conjectures II
+\item Added Conjecture III
 \end{enumerate}
 
 \noindent\textbf{Instructions:} Each of the problems below is/will be presented as a conjecture. Each conjecture asks you to prove or disprove the conjecture, possibly along with some additional directions. 
@@ -184,60 +184,40 @@ We notice that when $n$ is even, the result is positive, and when $n$ is odd, th
 
 
 \begin{proof}
-Injection
+First, we show that $f$ is an injection.
 
 When $n$ is even, we show that $f(x)=f(y) \to x=y$, and we know that $(-1)^n = 1$.
 \begin{align}
-f(x)=\frac{1+(1)(2x-1)}{4}\\
-f(y)=\frac{1+(1)(2y-1)}{4}\\
-\frac{1+(1)(2x-1)}{4} = \frac{1+(1)(2y-1)}{4}\\
-1+(1)(2x-1) = 1+(1)(2y-1)\\
-(1)(2x-1) = (1)(2y-1)\\
-2x-1 = 2y-1\\
-2x=2y\\
-x=y
+f(x)&=\frac{1+(1)(2x-1)}{4}\\
+f(y)&=\frac{1+(1)(2y-1)}{4}\\
+\frac{1+(1)(2x-1)}{4} &= \frac{1+(1)(2y-1)}{4}\\
+1+(1)(2x-1) &= 1+(1)(2y-1)\\
+(1)(2x-1) &= (1)(2y-1)\\
+2x-1 &= 2y-1\\
+2x&=2y\\
+x&=y
 \end{align}
 When $n$ is odd, we show that $f(x)=f(y) \to x=y$, and we know that $(-1)^n = -1$.
 \begin{align}
-f(x)=\frac{1+(-1)(2x-1)}{4}\\
-f(y)=\frac{1+(-1)(2y-1)}{4}\\
-\frac{1+(-1)(2x-1)}{4} = \frac{1+(-1)(2y-1)}{4}\\
-1+(-1)(2x-1) = 1+(-1)(2y-1)\\
-(-1)(2x-1) = (-1)(2y-1)\\
--2x+1 = -2y+1\\
--2x=-2y\\
-x=y
+f(x)&=\frac{1+(-1)(2x-1)}{4}\\
+f(y)&=\frac{1+(-1)(2y-1)}{4}\\
+\frac{1+(-1)(2x-1)}{4} &= \frac{1+(-1)(2y-1)}{4}\\
+1+(-1)(2x-1) &= 1+(-1)(2y-1)\\
+(-1)(2x-1) &= (-1)(2y-1)\\
+-2x+1 &= -2y+1\\
+-2x&=-2y\\
+x&=y
 \end{align}
 Therefore, since $f(x)=f(y) \to x=y$ both when $n$ is even and odd, we know that the function $f(n) = \frac{1+(-1)^n (2n-1)}{4}$ is an injection.
 
 
-Surjection
+Next, we show that $f$ is a surjection.
 
 We must solve for $y$ in $f(x) =y$ to demonstrate that the codomain has at least one corresponding value of the domain in order for $f(n)$ to be surjective. 
 
-When $n$ is even, we know that $(-1)^n = 1$.
-\begin{align}
-f(x) = y = \frac{1+(1)(2x-1)}{4}\\
-y = \frac{1+(1)(2x-1)}{4}\\
-4y = 1+(1)(2x-1)\\
-4y-1 = (1)(2x-1)\\
-4y-1 = 2x-1\\
-4y=2x\\
-2y=x
-\end{align}
-Thus, since the function $2y=x$ is linear, having all possible values of $x$ and $y$ as its domain and codomain, $f(n)$ is surjective when $n$ is even.
+When $n$ is even, we know that $(-1)^n = 1$. Solving for $x$, we find that $x=2y$. Thus, since the function $2y=x$ is linear, having all possible values of $x$ and $y$ as its domain and codomain, $f(n)$ is surjective when $n$ is even.
 
-When $n$ is odd, we know that $(-1)^n=-1$.
-\begin{align}
-f(x) = y = \frac{1+(-1)(2x-1)}{4}\\
-y = \frac{1+(-1)(2x-1)}{4}\\
-4y = 1+(-1)(2x-1)\\
-4y-1 = (-1)(2x-1)\\
-4y-1 = -2x+1\\
-4y-2=-2x\\
--2y+1=x
-\end{align}
-Thus, since the function $-2y+1=x$ is linear, having all possible values of $x$ and $y$ as its domain and codomain, $f(n)$ is surjective when $n$ is odd.
+When $n$ is odd, we know that $(-1)^n=-1$. Solving for $x$, we find that $x=-2y+1$. Thus, since the function $-2y+1=x$ is linear, having all possible values of $x$ and $y$ as its domain and codomain, $f(n)$ is surjective when $n$ is odd.
 
 Since $f(n)$ is surjective both when $n$ is even and when it is odd, we know that the function is surjective.
 
@@ -247,7 +227,7 @@ Therefore, since $f(n)$ has been demonstrated to be both injective and surjectiv
 
 
 \begin{example}
-For the following example, choose two of the four problems to do.Exactly one of your choices should be a combinatorial proof.
+For the following example, choose two of the four problems to do. Exactly one of your choices should be a combinatorial proof.
 
 \begin{enumerate}
     \item (Combinatorial) For $n\ge 1$,
@@ -273,8 +253,10 @@ For the following example, choose two of the four problems to do.Exactly one of 
 \end{example}
 \begin{proof}
 \end{proof}
+
+\clearpage
 \rubric
-\rubric
+
 
 
 
