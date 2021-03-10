@@ -7,6 +7,7 @@
 \usepackage{graphicx}				% For handling graphics
 \usepackage[colorinlistoftodos]{todonotes}	% For the fancy "todo" stuff
 \usepackage{hyperref}				% For clickable links in the final PDF
+\usepackage{enumitem}
 %\usepackage{titling}				% To take less space at the top of the page with the title
 %\setlength{\droptitle}{-2cm}
 %\pretitle{\Large\scshape}%{\begin{flushright}\Large\scshape}
@@ -232,7 +233,7 @@ For the following example, choose two of the four problems to do. Exactly one of
 \begin{enumerate}
     \item (Combinatorial) For $n\ge 1$,
     \[
-        \sum\limits_{k=0}^n k \binom{n}{k} = n 2^{n-1}.
+        \sum\limits_{k=0}^n k \binom{n}{k} = n 2^{n-1}
     \]
     
     \item (Combinatorial) For $0\le k \le n$,
@@ -245,13 +246,37 @@ For the following example, choose two of the four problems to do. Exactly one of
             \item How many words begin with \textit{d} or \textit{e}?
             \item How many words end in \textit{b} or \textit{a}?
             \item How many words begin with \textit{d} or \textit{e} and end in \textit{b} or \textit{a}?
-            \item How many have first letter neither \textit{d} nor \textit{e} and last letter nether \textit{b} nor \textit{a}?
+            \item How many have first letter neither \textit{d} nor \textit{e} and last letter neither \textit{b} nor \textit{a}?
         \end{enumerate}
     \item We wish to improve upon the ogre's distribution of 43 cupcakes to 12 baby mice by ensuring that every baby mouse gets at least \textit{two} cupcakes. How many ways are there to accomplish this?
 \end{enumerate}
 
 \end{example}
 \begin{proof}
+Proof
+
+The summation 
+    \[
+        \sum\limits_{k=0}^n k \binom{n}{k} = n 2^{n-1}.
+    \]
+when $n\ge 1$, shall be demonstrated to be true as a way of counting sets. The cardinality of the power set of a set with cardinality $n$ is $2^n$. This number is the total number of ways to include or exclude any elements from the set. Thus, $2^{n-1}$ is the number of ways to choose any number of elements from a set with cardinality $n-1$. Multiplying this by $n$ is the ways to arrange that set for each element in $n$. Thus, the right-hand side of the equation can be thought of as counting the ways to choose elements from a set for each way that we can remove one element.
+
+The sum of each row of Pascal's Triangle is equal to $2^{depth}$. Thus, 
+    \[
+        \sum\limits_{k=0}^n \binom{n}{k} = 2^{n}
+    \]
+since each element of Pascal's Triangle is equal to $\binom{n}{k}$ for a given $n$ and $k$ when $n \ge 1$ and $k \ge 0$.
+\end{proof}
+
+\begin{proof}
+Proof 3
+\begin{enumerate}[label=(\alph*)]
+\item There are 6 options for the first letter, 5 for the second, 4 for the third... for a total of $6! = 720$ options for 6-letter words.
+\item There are 2 options for the first letter, 5 for the second, 4 for the third... for a total of $2*5! = 240$ words that start with $d$ or $e$.
+\item This is essentially $(b)$ but backwards. There are 2 options for the last letter, 5 options for the penultimate... for a total of $2*5!=120$ words that end in $a$ or $b$.
+\item To find the total, we must add the results from $(b)$ and $(c)$, but subtract out the number that get overcounted through PIE. Thus, we must subtract the number that start with $d$ or $e$ and end in $b$ or $a$. We have 2 options for the first and last letters, and 4 for the second, 3 for the third... for a total of $2*2*4! = 96$ words. Next, we subtract $96$ from the sum of $(a)$ and $(b)$, $240 + 240 = 480$. Therefore, we have $480 - 96 = 384$ words that both begin with $d$ or $e$ and end with $a$ or $b$.
+\item This question asks for the complement of $(d)$: in $(d)$, we found how many words both begin with $d$ or $e$ and end with $b$ or $a$, whereas now we must find the words that do not fall into that category. Since we know how many words we have in total from $(a)$, we can subtract the words that do not fit the criteria from the total. Thus, we have $720 - 384 = 336$ words that neither begin with $d$ or $e$ nor end with $a$ or $b$.
+\end{enumerate}
 \end{proof}
 
 \clearpage

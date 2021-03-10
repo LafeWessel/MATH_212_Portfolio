@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.1.26)  9 MAR 2021 15:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.1.26)  10 MAR 2021 10:56
 entering extended mode
 **./m212-portfolio.tex
 (m212-portfolio.tex
@@ -668,50 +668,59 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip59
 )
+(C:\Users\wesse\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip60
+\enit@outerparindent=\dimen263
+\enit@toks=\toks43
+\enit@inbox=\box60
+\enit@count@id=\count301
+\enitdp@description=\count302
+)
 
-Package amsthm Warning: Unknown theoremstyle `theorem' on input line 72.
+Package amsthm Warning: Unknown theoremstyle `theorem' on input line 73.
 
-\c@theorem=\count301
+\c@theorem=\count303
 
 (C:\Users\wesse\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2021-01-09 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count302
-\l__pdf_internal_box=\box60
+\l__kernel_color_stack_int=\count304
+\l__pdf_internal_box=\box61
 ) (m212-portfolio.aux)
 \openout1 = `m212-portfolio.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
 
 (C:\Users\wesse\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count303
-\scratchdimen=\dimen263
-\scratchbox=\box61
-\nofMPsegments=\count304
-\nofMParguments=\count305
-\everyMPshowfont=\toks43
-\MPscratchCnt=\count306
-\MPscratchDim=\dimen264
-\MPnumerator=\count307
-\makeMPintoPDFobject=\count308
-\everyMPtoPDFconversion=\toks44
+\scratchcounter=\count305
+\scratchdimen=\dimen264
+\scratchbox=\box62
+\nofMPsegments=\count306
+\nofMParguments=\count307
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count308
+\MPscratchDim=\dimen265
+\MPnumerator=\count309
+\makeMPintoPDFobject=\count310
+\everyMPtoPDFconversion=\toks45
 )
 (C:\Users\wesse\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -719,7 +728,7 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
-Package hyperref Info: Link coloring OFF on input line 91.
+Package hyperref Info: Link coloring OFF on input line 92.
 
 (C:\Users\wesse\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -731,22 +740,22 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count309
+\c@section@level=\count311
 )
-LaTeX Info: Redefining \ref on input line 91.
-LaTeX Info: Redefining \pageref on input line 91.
-LaTeX Info: Redefining \nameref on input line 91.
+LaTeX Info: Redefining \ref on input line 92.
+LaTeX Info: Redefining \pageref on input line 92.
+LaTeX Info: Redefining \nameref on input line 92.
  (m212-portfolio.out) (m212-portfolio.out)
 \@outlinefile=\write4
 \openout4 = `m212-portfolio.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 94.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 95.
 
 
 (C:\Users\wesse\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 94.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 95.
 
 
 (C:\Users\wesse\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -759,27 +768,27 @@ ext4): destination with the same identifier (name{page.1}) has been already use
 d, duplicate ignored
 <to be read again> 
                    \relax 
-l.121 \clearpage
+l.122 \clearpage
                  [1] [2
 
 ] [3] [4
 
 ] [5] [6
 
-] [7
+] [7] [8
 
 ] (m212-portfolio.aux)
 Package rerunfilecheck Info: File `m212-portfolio.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 18142 strings out of 479618
- 345400 string characters out of 2865026
- 644520 words of memory out of 3000000
- 34893 multiletter control sequences out of 15000+200000
+ 18469 strings out of 479618
+ 350906 string characters out of 2865026
+ 652028 words of memory out of 3000000
+ 35210 multiletter control sequences out of 15000+200000
  411527 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,8n,102p,604b,408s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 102i,8n,102p,604b,411s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\wesse\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/wesse/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/wesse/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -797,9 +806,9 @@ msfonts/cm/cmsy10.pfb><C:/Users/wesse/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmsy8.pfb><C:/Users/wesse/AppData/Local/Programs/MiKTeX/fon
 ts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/wesse/AppData/Local/Programs/M
 iKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on m212-portfolio.pdf (8 pages, 181241 bytes).
+Output written on m212-portfolio.pdf (9 pages, 187361 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
- 42 named destinations out of 1000 (max. 500000)
+ 181 PDF objects out of 1000 (max. 8388607)
+ 48 named destinations out of 1000 (max. 500000)
  109 words of extra memory for PDF output out of 10000 (max. 10000000)
 
