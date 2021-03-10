@@ -233,12 +233,12 @@ For the following example, choose two of the four problems to do. Exactly one of
 \begin{enumerate}
     \item (Combinatorial) For $n\ge 1$,
     \[
-        \sum\limits_{k=0}^n k \binom{n}{k} = n 2^{n-1}
+        \sum\limits_{k=0}^n k \binom{n}{k} = n 2^{n-1}.
     \]
     
     \item (Combinatorial) For $0\le k \le n$,
     \[
-        \sum\limits_{m=k}^n \binom{m}{k} = \binom{n+1}{k+1}
+        \sum\limits_{m=k}^n \binom{m}{k} = \binom{n+1}{k+1}.
     \]
     \item Consider the alphabet $\{a,b,c,d,e,f\}$ and make words without repetition of letters allowed.
         \begin{enumerate}
@@ -252,22 +252,25 @@ For the following example, choose two of the four problems to do. Exactly one of
 \end{enumerate}
 
 \end{example}
+\clearpage
 \begin{proof}
-Proof
+Proof 1
 
 The summation 
     \[
-        \sum\limits_{k=0}^n k \binom{n}{k} = n 2^{n-1}.
+        \sum\limits_{k=0}^n k \binom{n}{k} = n 2^{n-1}
     \]
 when $n\ge 1$, shall be demonstrated to be true as a way of counting sets. The cardinality of the power set of a set with cardinality $n$ is $2^n$. This number is the total number of ways to include or exclude any elements from the set. Thus, $2^{n-1}$ is the number of ways to choose any number of elements from a set with cardinality $n-1$. Multiplying this by $n$ is the ways to arrange that set for each element in $n$. Thus, the right-hand side of the equation can be thought of as counting the ways to choose elements from a set for each way that we can remove one element.
 
 The sum of each row of Pascal's Triangle is equal to $2^{depth}$. Thus, 
     \[
-        \sum\limits_{k=0}^n \binom{n}{k} = 2^{n}
+        \sum\limits_{k=0}^n \binom{n}{k} = 2^{n},
     \]
-since each element of Pascal's Triangle is equal to $\binom{n}{k}$ for a given $n$ and $k$ when $n \ge 1$ and $k \ge 0$.
-\end{proof}
+since each element of Pascal's Triangle is equal to $\binom{n}{k}$ for a given $n$ and $k$ when $n \ge 1$ and $n \ge k \ge 0$. Multiplying each $\binom{n}{k}$ by $k$ counts the ways to choose $k$ from a set of $n$ elements for each $k$. This keeps the symmetry of Pascal's Triangle, and when summed across a row, will equal $n*2^{n-1}$. Thus, the left-hand side of the equation can be thought of as counting the ways that we can choose $k$ elements from $n$ for each element that we choose, and summing them until we are choosing the entire set.
 
+This proof answers the question how many ways can I choose one element, then for each of 2 options I choose 2 from the set, then for 3 options I choose 3 from the set, all the way until for each $n$ options I choose $n$ elements from the set containing $n$ elements. Or, I could count the total ways to choose from a set of $n-1$ elements for each of $n$ elements, being $n2^{n-1}$.
+\end{proof}
+\clearpage
 \begin{proof}
 Proof 3
 \begin{enumerate}[label=(\alph*)]
