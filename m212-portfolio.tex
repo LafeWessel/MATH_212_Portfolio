@@ -285,7 +285,7 @@ Proof 3
 \clearpage
 
 \begin{theorem}
-    Consider the recurrence relation $a_n = s a_{n-1}+d$, where $s\ne 1$.
+    Consider the recurrence relation $a_n = s a_{n-1}+d$ where $s\ne 1$.
     Prove that
     \[
         a_n = \left(a_0 + \frac{d}{s-1}\right) s^n - \frac{d}{s-1}
@@ -294,8 +294,35 @@ Proof 3
 \end{theorem}
 
 \begin{proof}
+To show that the shown solution is actually a solution to the shown recurrence relation, we will substitute $a_{n-1}$ into the original recurrence relation. 
 
+\begin{align*}
+a_{n-1} &= (a_0 + \frac{d}{s-1})s^{n-1}-\frac{d}{s-1}
+\end{align*}
+This can then be substituted into $a_n = sa_{n-1} + d$.
+\begin{align*}
+a_n &= s((a_0 + \frac{d}{s-1})s^{n-1}-\frac{d}{s-1}) + d\\
+a_n &= s((a_0 + \frac{d}{s-1})s^{n-1}) + \frac{-sd}{s-1} + d\\
+a_n &= s*s^{n-1}(a_0 + \frac{d}{s-1}) + \frac{-sd}{s-1} + d\\
+a_n &= s^n(a_0 + \frac{d}{s-1}) + \frac{-sd}{s-1} + d\\
+a_n &= s^n(a_0 + \frac{d}{s-1}) + \frac{-sd}{s-1} + \frac{d(s-1)}{s-1}\\
+a_n &= s^n(a_0 + \frac{d}{s-1}) + \frac{-sd}{s-1} + \frac{sd - d}{s-1}\\
+a_n &= s^n(a_0 + \frac{d}{s-1}) + \frac{-sd + sd - d}{s-1}\\
+a_n &= s^n(a_0 + \frac{d}{s-1}) + \frac{-d}{s-1}\\
+a_n &= (a_0 + \frac{d}{s-1})s^n - \frac{d}{s-1} 
+\end{align*}
+Thus, the solution can be used to find a closed-form solution to recurrence relations of the form $a_n = s a_{n-1}+d$ where $s\ne 1$.
 \end{proof}
+\clearpage
+\begin{proof}
+To solve the recurrence relation $a_n = 5 a_{n-1} + 3$ where $a_0 = 1$, we will find the closed-form equation using the formula $a_n = \left(a_0 + \frac{d}{s-1}\right) s^n - \frac{d}{s-1}$, since the relation follows the form $a_n = s a_{n-1}+d$. Using this formula and previously known values, we know that $a_0 = 1$, $d =3$, and $s=5$. Plugging these in and solving, we see that
+\begin{align*}
+a_n &= (1 + \frac{3}{5-1})*5^n - \frac{3}{5-1}\\
+a_n &= ( 1 + \frac{3}{4}) 5^n - \frac{3}{4}\\
+a_n &= \frac{7}{3}5^n - \frac{3}{4}
+\end{align*}
+\end{proof}
+
 \clearpage
 
 \rubric
