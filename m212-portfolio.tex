@@ -266,7 +266,7 @@ The sum of each row of Pascal's Triangle is equal to $2^{depth}$. Thus,
     \[
         \sum\limits_{k=0}^n \binom{n}{k} = 2^{n},
     \]
-since each element of Pascal's Triangle is equal to $\binom{n}{k}$ for a given $n$ and $k$ when $n \ge 1$ and $n \ge k \ge 0$. Multiplying each $\binom{n}{k}$ by $k$ counts the ways to choose $k$ from a set of $n$ elements for each $k$. This keeps the symmetry of Pascal's Triangle, and when summed across a row, will equal $n*2^{n-1}$. Thus, the left-hand side of the equation can be thought of as counting the ways that we can choose $k$ elements from $n$ for each element that we choose, and summing them until we are choosing the entire set.
+since each element of Pascal's Triangle is equal to $\binom{n}{k}$ for a given $n$ and $k$ when $n \ge 1$ and $n \ge k \ge 0$. Multiplying each $\binom{n}{k}$ by $k$ counts the ways to choose $k$ from a set of $n$ elements for each $k$. This keeps the symmetry of Pascal's Triangle, and when summed across a row, will equal $n\cdot2^{n-1}$. Thus, the left-hand side of the equation can be thought of as counting the ways that we can choose $k$ elements from $n$ for each element that we choose, and summing them until we are choosing the entire set.
 
 This proof answers the question how many ways can I choose one element, then for each of 2 options I choose 2 from the set, then for 3 options I choose 3 from the set, all the way until for each $n$ options I choose $n$ elements from the set containing $n$ elements. Or, I could count the total ways to choose from a set of $n-1$ elements for each of $n$ elements, being $n2^{n-1}$.
 \end{proof}
@@ -275,9 +275,9 @@ This proof answers the question how many ways can I choose one element, then for
 Proof 3
 \begin{enumerate}[label=(\alph*)]
 \item There are 6 options for the first letter, 5 for the second, 4 for the third... for a total of $6! = 720$ options for 6-letter words.
-\item There are 2 options for the first letter, 5 for the second, 4 for the third... for a total of $2*5! = 240$ words that start with $d$ or $e$.
-\item This is essentially $(b)$ but backwards. There are 2 options for the last letter, 5 options for the penultimate... for a total of $2*5!=120$ words that end in $a$ or $b$.
-\item To find the total, we must add the results from $(b)$ and $(c)$, but subtract out the number that get overcounted through PIE. Thus, we must subtract the number that start with $d$ or $e$ and end in $b$ or $a$. We have 2 options for the first and last letters, and 4 for the second, 3 for the third... for a total of $2*2*4! = 96$ words. Next, we subtract $96$ from the sum of $(a)$ and $(b)$, $240 + 240 = 480$. Therefore, we have $480 - 96 = 384$ words that both begin with $d$ or $e$ and end with $a$ or $b$.
+\item There are 2 options for the first letter, 5 for the second, 4 for the third... for a total of $2\cdot5! = 240$ words that start with $d$ or $e$.
+\item This is essentially $(b)$ but backwards. There are 2 options for the last letter, 5 options for the penultimate... for a total of $2 \cdot 5!=120$ words that end in $a$ or $b$.
+\item To find the total, we must add the results from $(b)$ and $(c)$, but subtract out the number that get overcounted through PIE. Thus, we must subtract the number that start with $d$ or $e$ and end in $b$ or $a$. We have 2 options for the first and last letters, and 4 for the second, 3 for the third... for a total of $2\cdot2\cdot4! = 96$ words. Next, we subtract $96$ from the sum of $(a)$ and $(b)$, $240 + 240 = 480$. Therefore, we have $480 - 96 = 384$ words that both begin with $d$ or $e$ and end with $a$ or $b$.
 \item This question asks for the complement of $(d)$: in $(d)$, we found how many words both begin with $d$ or $e$ and end with $b$ or $a$, whereas now we must find the words that do not fall into that category. Since we know how many words we have in total from $(a)$, we can subtract the words that do not fit the criteria from the total. Thus, we have $720 - 384 = 336$ words that neither begin with $d$ or $e$ nor end with $a$ or $b$.
 \end{enumerate}
 \end{proof}
@@ -303,7 +303,7 @@ This can then be substituted into $a_n = sa_{n-1} + d$.
 \begin{align*}
 a_n &= s((a_0 + \frac{d}{s-1})s^{n-1}-\frac{d}{s-1}) + d\\
 a_n &= s((a_0 + \frac{d}{s-1})s^{n-1}) + \frac{-sd}{s-1} + d\\
-a_n &= s*s^{n-1}(a_0 + \frac{d}{s-1}) + \frac{-sd}{s-1} + d\\
+a_n &= s \cdot s^{n-1}(a_0 + \frac{d}{s-1}) + \frac{-sd}{s-1} + d\\
 a_n &= s^n(a_0 + \frac{d}{s-1}) + \frac{-sd}{s-1} + d\\
 a_n &= s^n(a_0 + \frac{d}{s-1}) + \frac{-sd}{s-1} + \frac{d(s-1)}{s-1}\\
 a_n &= s^n(a_0 + \frac{d}{s-1}) + \frac{-sd}{s-1} + \frac{sd - d}{s-1}\\
@@ -317,9 +317,9 @@ Thus, the solution can be used to find a closed-form solution to recurrence rela
 \begin{proof}
 To solve the recurrence relation $a_n = 5 a_{n-1} + 3$ where $a_0 = 1$, we will find the closed-form equation using the formula $a_n = \left(a_0 + \frac{d}{s-1}\right) s^n - \frac{d}{s-1}$, since the relation follows the form $a_n = s a_{n-1}+d$. Using this formula and previously known values, we know that $a_0 = 1$, $d =3$, and $s=5$. Plugging these in and solving, we see that
 \begin{align*}
-a_n &= (1 + \frac{3}{5-1})*5^n - \frac{3}{5-1}\\
+a_n &= (1 + \frac{3}{5-1})\cdot5^n - \frac{3}{5-1}\\
 a_n &= ( 1 + \frac{3}{4}) 5^n - \frac{3}{4}\\
-a_n &= \frac{7}{3}5^n - \frac{3}{4}
+a_n &= \frac{7}{4}5^n - \frac{3}{4}
 \end{align*}
 \end{proof}
 
