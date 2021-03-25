@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.16)  24 MAR 2021 12:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.16)  24 MAR 2021 19:27
 entering extended mode
 **./m212-portfolio.tex
 (m212-portfolio.tex
@@ -859,7 +859,7 @@ Here is how much of TeX's memory you used:
  35210 multiletter control sequences out of 15000+200000
  411527 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,8n,102p,604b,411s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 102i,8n,102p,725b,411s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Lafe Wessel - Laptop\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
 /ec/dpi600\tcrm1095.pk><C:/Users/Lafe Wessel - Laptop/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Lafe Wessel - Laptop/A
@@ -880,7 +880,7 @@ ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/La
 fe Wessel - Laptop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmti10.pfb><C:/Users/Lafe Wessel - Laptop/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on m212-portfolio.pdf (13 pages, 195724 bytes).
+Output written on m212-portfolio.pdf (13 pages, 198458 bytes).
 PDF statistics:
  201 PDF objects out of 1000 (max. 8388607)
  54 named destinations out of 1000 (max. 500000)

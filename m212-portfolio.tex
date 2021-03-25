@@ -266,7 +266,7 @@ The sum of each row of Pascal's Triangle is equal to $2^{depth}$. Thus,
     \[
         \sum\limits_{k=0}^n \binom{n}{k} = 2^{n},
     \]
-since each element of Pascal's Triangle is equal to $\binom{n}{k}$ for a given $n$ and $k$ when $n \ge 1$ and $n \ge k \ge 0$. Multiplying each $\binom{n}{k}$ by $k$ counts the ways to choose $k$ from a set of $n$ elements for each $k$. This keeps the symmetry of Pascal's Triangle, and when summed across a row, will equal $n\cdot2^{n-1}$. Thus, the left-hand side of the equation can be thought of as counting the ways that we can choose $k$ elements from $n$ for each element that we choose, and summing them until we are choosing the entire set.
+since each element of Pascal's Triangle is equal to $\binom{n}{k}$ for a given $n$ and $k$ when $n \ge 1$ and $n \ge k \ge 0$. Multiplying each $\binom{n}{k}$ by $k$ counts the ways to choose $k$ from a set of $n$ elements for each element being chosen, $k$. (i.e. For each of $k$ sweaters, how many ways are there to choose $k$ sweaters from a wardrobe of $n$ sweaters?)  This keeps the symmetry of Pascal's Triangle and when summed across a row, will equal $n\cdot2^{n-1}$. Thus, the left-hand side of the equation can be thought of as counting the ways that we can choose $k$ elements from $n$ for each element that we choose, and summing them until we are choosing the entire set.
 
 This proof answers the question how many ways can I choose one element, then for each of 2 options I choose 2 from the set, then for 3 options I choose 3 from the set, all the way until for each $n$ options I choose $n$ elements from the set containing $n$ elements. Or, I could count the total ways to choose from a set of $n-1$ elements for each of $n$ elements, being $n2^{n-1}$.
 \end{proof}
@@ -276,7 +276,7 @@ Proof 3
 \begin{enumerate}[label=(\alph*)]
 \item There are 6 options for the first letter, 5 for the second, 4 for the third... for a total of $6! = 720$ options for 6-letter words.
 \item There are 2 options for the first letter, 5 for the second, 4 for the third... for a total of $2\cdot5! = 240$ words that start with $d$ or $e$.
-\item This is essentially $(b)$ but backwards. There are 2 options for the last letter, 5 options for the penultimate... for a total of $2 \cdot 5!=120$ words that end in $a$ or $b$.
+\item This is essentially $(b)$ but backwards. There are 2 options for the last letter, 5 options for the penultimate... for a total of $2 \cdot 5!=240$ words that end in $a$ or $b$.
 \item To find the total, we must add the results from $(b)$ and $(c)$, but subtract out the number that get overcounted through PIE. Thus, we must subtract the number that start with $d$ or $e$ and end in $b$ or $a$. We have 2 options for the first and last letters, and 4 for the second, 3 for the third... for a total of $2\cdot2\cdot4! = 96$ words. Next, we subtract $96$ from the sum of $(a)$ and $(b)$, $240 + 240 = 480$. Therefore, we have $480 - 96 = 384$ words that both begin with $d$ or $e$ and end with $a$ or $b$.
 \item This question asks for the complement of $(d)$: in $(d)$, we found how many words both begin with $d$ or $e$ and end with $b$ or $a$, whereas now we must find the words that do not fall into that category. Since we know how many words we have in total from $(a)$, we can subtract the words that do not fit the criteria from the total. Thus, we have $720 - 384 = 336$ words that neither begin with $d$ or $e$ nor end with $a$ or $b$.
 \end{enumerate}
@@ -334,6 +334,34 @@ a_n &= \frac{7}{4}5^n - \frac{3}{4}
 
 \begin{proof}
 (By induction.)
+Let $P(n)$ be the statement that for all $n \ge 1$, $\frac{1}{1\cdot 2} + \frac{1}{2\cdot 3} + \cdots + \frac{1}{n\cdot(n+1)} = \frac{n}{n+1}$. 
+
+Base Case: For $n = 1$.
+\begin{align*}
+P(1) = \frac{1}{1 \cdot (1+1)} &= \frac{1}{1+1}\\
+\frac{1}{2} &= \frac{1}{2}
+\end{align*}
+Since $P(1)$ is true, we can move on to the Inductive Hypothesis.
+
+Inductive Hypothesis: Assume $P(k)$ is true for all $1 \le k < n$.
+
+Inductive Step: Consider $k+1$.
+\begin{align*}
+P(k+1) = \frac{1}{1\cdot 2} + \frac{1}{2\cdot 3} + \cdots + \frac{1}{k\cdot(k+1)} + \frac{1}{(k+1) \cdot (k+1+1)} &= \frac{(k+1)}{(k+1)+1}.
+\end{align*}
+This can be reduced to
+\begin{align*}
+\frac{k}{k+1} + \frac{1}{(k+1) \cdot (k+2)}&= \frac{(k+1)}{(k+1)+1},
+\end{align*}
+which can be further reduced
+\begin{align*}
+\frac{k}{k+1}\cdot \frac{k+2}{k+2} + \frac{1}{(k+1) \cdot (k+2)} &= \frac{k+1}{k+2}\\
+\frac{k(k+2)}{(k+1)(k+2)} + \frac{1}{(k+1)(k+2)} &= \frac{k+1}{k+2}\\
+\frac{k^2+2k+1}{(k+1)(k+2)} &= \frac{k+1}{k+2}\\
+\frac{(k+1)^2}{(k+1)(k+2)} &= \frac{k+1}{k+2}\\
+\frac{k+1}{k+2} &= \frac{k+1}{k+2}.
+\end{align*}
+Therefore, since $P(k)$ is true for all $1 \le k < n$, by strong induction we can say that $P(n)$ is true for all values of $n \ge 1$.
 \end{proof}
 \clearpage
 
