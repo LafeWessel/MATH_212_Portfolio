@@ -97,8 +97,8 @@
 \noindent\textbf{Changelog:} \emph{List the changes you've made since the last draft, with special attention paid to problems that have received significant revisions since the last draft (i.e., more than fixing typos). If there is any additional information you'd like me to consider as I review this submission, please say so now.}
 
 \begin{enumerate}
-\item Reworked Conjecture III
-\item Added Conjecture V
+\item Reworked Conjecture V
+\item Added Conjecture VI
 \end{enumerate}
 
 \noindent\textbf{Instructions:} Each of the problems below is/will be presented as a conjecture. Each conjecture asks you to prove or disprove the conjecture, possibly along with some additional directions. 
@@ -347,19 +347,20 @@ Inductive Hypothesis: Assume $P(k)$ is true for all $1 \le k < n$.
 
 Inductive Step: Consider $k+1$.
 \begin{align*}
-P(k+1) = \frac{1}{1\cdot 2} + \frac{1}{2\cdot 3} + \cdots + \frac{1}{k\cdot(k+1)} + \frac{1}{(k+1) \cdot (k+1+1)} &= \frac{(k+1)}{(k+1)+1}.
+P(k+1) = \frac{1}{1\cdot 2} + \frac{1}{2\cdot 3} + \cdots + \frac{1}{k\cdot(k+1)} + \frac{1}{(k+1) \cdot (k+1+1)}.
 \end{align*}
 This can be reduced to
 \begin{align*}
-\frac{k}{k+1} + \frac{1}{(k+1) \cdot (k+2)}&= \frac{(k+1)}{(k+1)+1},
+\frac{k}{k+1} + \frac{1}{(k+1) \cdot (k+2)},
 \end{align*}
 which can be further reduced
 \begin{align*}
-\frac{k}{k+1}\cdot \frac{k+2}{k+2} + \frac{1}{(k+1) \cdot (k+2)} &= \frac{k+1}{k+2}\\
-\frac{k(k+2)}{(k+1)(k+2)} + \frac{1}{(k+1)(k+2)} &= \frac{k+1}{k+2}\\
-\frac{k^2+2k+1}{(k+1)(k+2)} &= \frac{k+1}{k+2}\\
-\frac{(k+1)^2}{(k+1)(k+2)} &= \frac{k+1}{k+2}\\
-\frac{k+1}{k+2} &= \frac{k+1}{k+2}.
+&=\frac{k}{k+1}\cdot \frac{k+2}{k+2} + \frac{1}{(k+1) \cdot (k+2)}\\
+&=\frac{k(k+2)}{(k+1)(k+2)} + \frac{1}{(k+1)(k+2)}\\
+&=\frac{k^2+2k+1}{(k+1)(k+2)}\\
+&=\frac{(k+1)^2}{(k+1)(k+2)}\\
+&=\frac{k+1}{k+2}\\
+& = \frac{k+1}{(k+1)+1}.
 \end{align*}
 Therefore, since $P(k)$ is true for all $1 \le k < n$, by strong induction we can say that $P(n)$ is true for all values of $n \ge 1$.
 \end{proof}
@@ -383,7 +384,9 @@ Thus, e.g., $11\equiv 3\mod 4$, since $4|11-3$, but $9\not\equiv 3\mod 4$ since 
 \end{theorem}
 
 \begin{proof}
+(By Contradiction) From Theorem 6, assume $a \equiv b$ mod $m$ and $a^2 \not \equiv b^2$ mod $m$.
 
+Contradiction: Let $a=6$, $b=2$, and $m=4$. The statement $m|(a-b)$ is true since $4$ divides $6-2=4$. As for $m|(a^2-b^2)$, $4|(6^2-2^2)$ since $4$ divides $6^2-4^2=36-4=32$. Here is a clear contradiction. Therefore, by contradiction, we can conclude that if $a \equiv b$ mod $m$, then $a^2 \equiv b^2$ mod $m$ as well.
 \end{proof}
 
 \clearpage
