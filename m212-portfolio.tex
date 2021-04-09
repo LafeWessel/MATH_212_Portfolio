@@ -384,9 +384,7 @@ Thus, e.g., $11\equiv 3\mod 4$, since $4|11-3$, but $9\not\equiv 3\mod 4$ since 
 \end{theorem}
 
 \begin{proof}
-(By Contradiction) From Theorem 6, assume $a \equiv b$ mod $m$ and $a^2 \not \equiv b^2$ mod $m$.
-
-Contradiction: Let $a=6$, $b=2$, and $m=4$. The statement $m|(a-b)$ is true since $4$ divides $6-2=4$. As for $m|(a^2-b^2)$, $4|(6^2-2^2)$ since $4$ divides $6^2-4^2=36-4=32$. Here is a clear contradiction. Therefore, by contradiction, we can conclude that if $a \equiv b$ mod $m$, then $a^2 \equiv b^2$ mod $m$ as well.
+Let $c \equiv d \mod m$ for $c,d \in \Z$. The expression $a \equiv b \mod m$ can be rearranged to $\frac{a-b}{n} = q_1$ for $q_1 \in \Z$. This can be further rearranged to $a = b +nq_1$. Applying this to $c \equiv d \mod m$, we get $c = d +nq_2$ for $q_2 \in \Z$. Multiplying these together, we get $ac = (b +nq_1)(d+nq_2)$, expanding results in $ac = bd +bnq_2 + dnq_1 + q_1q_2n^2$. Factoring $n$ gives $ac = bd + n(bq_2 + dq_1 + q_1q_2n)$, which demonstrates that if $a \equiv b \mod m$ and $c \equiv d \mod m$, then $ ac \equiv bd \mod m$. If $a=c$ and $b=d$, then $a^2 \equiv b^2  \mod m$. Thus, if $a \equiv b \mod m$, then $a^2 \equiv b^2 \mod m$.
 \end{proof}
 
 \clearpage
@@ -397,7 +395,30 @@ Contradiction: Let $a=6$, $b=2$, and $m=4$. The statement $m|(a-b)$ is true sinc
 \end{conjecture}
 
 \begin{proof}
+First, we must establish if the sums and products of even and odd integers have even or odd results. 
 
+Let $x,y \in \Z$ and are even. Thus, $x = 2k$ and $y =2n$. Adding these together, we get $x+y = 2k + 2n = 2(k +n)$, meaning that the sum of 2 even integers is even. Multiplying, we get $xy=(2k)(2n)=2(2kn)$, meaning that the product of 2 even integers is even.
+
+Let $x,y \in \Z$ and are odd. Thus, $x=2k+1$ and $y=2n+1$. Adding these together, we get $x+y = 2k+2n+2=2(k+n+1)$, meaning that the sum of 2 odd integers is even. Multiplying, we get $xy = (2k+1)(2n+1) = 2(2kn +k +n) + 1$, meaning that the product of 2 odd integers is odd.
+
+Let $x,y \in \Z$, where $x$ is even, and $y$ is odd. Thus, $x=2k$ and $y=2n+1$. Adding these together, we get $x+y=2k+2n+1 = 2(k+n)+1$, meaning that the sum of an odd and even integer is odd. Multiplying, we get $xy=(2k)(2n+1)=2(2kn+k)$, meaning that the product of an even and odd integer is even.
+
+From these proofs, we can construct a truth table. For brevity's sake, $1$ signifies 'even' and $0$ signifies 'odd'.
+\begin{displaymath}
+\begin{array}{|c c c| c c| c|}
+$a$ & $b$ & $c$ & $ab$ & $ac$ & $ab+ac$\\
+\hline
+1 & 1 & 1 & 1 & 1 & 1\\
+1 & 1 & 0 & 1 & 1 & 1\\
+1 & 0 & 1 & 1 & 1 & 1\\
+1 & 0 & 0 & 1 & 1 & 1\\
+0 & 1 & 1 & 1 & 1 & 1\\
+0 & 1 & 0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0 & 1 & 0\\
+0 & 0 & 0 & 0 & 0 & 1
+\end{array}
+\end{displaymath}
+Therefore, since there are instances in the truth table where $ab+ac$ is odd, the conjecture is false.
 \end{proof}
 
 \clearpage
@@ -410,7 +431,7 @@ Contradiction: Let $a=6$, $b=2$, and $m=4$. The statement $m|(a-b)$ is true sinc
 
 \end{proof}
 
-
+\clearpage
 \rubric
 
 \end{document}
