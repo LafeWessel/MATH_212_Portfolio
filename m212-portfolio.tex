@@ -97,9 +97,9 @@
 \noindent\textbf{Changelog:} \emph{List the changes you've made since the last draft, with special attention paid to problems that have received significant revisions since the last draft (i.e., more than fixing typos). If there is any additional information you'd like me to consider as I review this submission, please say so now.}
 
 \begin{enumerate}
-\item Reworked Conjecture VI
-\item Added Conjecture VII
-\item Added Conjecture VIII
+\item Reworked Conjecture VII
+\item Reworked Conjecture VIII
+\item Added Conjecture IX
 \end{enumerate}
 
 \noindent\textbf{Instructions:} Each of the problems below is/will be presented as a conjecture. Each conjecture asks you to prove or disprove the conjecture, possibly along with some additional directions. 
@@ -404,19 +404,19 @@ Let $x,y \in \Z$ and are odd. Thus, $x=2k+1$ and $y=2n+1$. Adding these together
 
 Let $x,y \in \Z$, where $x$ is even, and $y$ is odd. Thus, $x=2k$ and $y=2n+1$. Adding these together, we get $x+y=2k+2n+1 = 2(k+n)+1$, meaning that the sum of an odd and even integer is odd. Multiplying, we get $xy=(2k)(2n+1)=2(2kn+k)$, meaning that the product of an even and odd integer is even.
 
-From these proofs, we can construct a truth table. For brevity's sake, $1$ signifies 'even' and $0$ signifies 'odd'.
+From these proofs, we can construct a truth table. For brevity's sake, $1$ signifies 'odd' and $0$ signifies 'even'.
 \begin{displaymath}
 \begin{array}{|c c c| c c| c|}
 $a$ & $b$ & $c$ & $ab$ & $ac$ & $ab+ac$\\
 \hline
-1 & 1 & 1 & 1 & 1 & 1\\
-1 & 1 & 0 & 1 & 1 & 1\\
-1 & 0 & 1 & 1 & 1 & 1\\
-1 & 0 & 0 & 1 & 1 & 1\\
-0 & 1 & 1 & 1 & 1 & 1\\
-0 & 1 & 0 & 1 & 0 & 0\\
-0 & 0 & 1 & 0 & 1 & 0\\
-0 & 0 & 0 & 0 & 0 & 1
+1 & 1 & 1 & 1 & 1 & 0\\
+1 & 1 & 0 & 1 & 0 & 1\\
+1 & 0 & 1 & 0 & 1 & 1\\
+1 & 0 & 0 & 0 & 0 & 0\\
+0 & 1 & 1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0 & 0 & 0\\
+0 & 0 & 1 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0
 \end{array}
 \end{displaymath}
 Therefore, since there are instances in the truth table where $ab+ac$ is odd, the conjecture is false. The conjecture should be amended to state ``For any integers $a$, $b$, $c$, if $a$ is even, then $ab+ac$ is even." This is known to be true by the truth table shown.
