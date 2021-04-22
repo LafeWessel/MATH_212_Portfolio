@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.16)  22 APR 2021 12:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.16)  22 APR 2021 12:57
 entering extended mode
 **./m212-portfolio.tex
 (m212-portfolio.tex
@@ -825,7 +825,7 @@ dfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.118 \clearpage
+l.116 \clearpage
                  [1] [2
 
 ] [3] [4
@@ -860,8 +860,8 @@ Package rerunfilecheck Info: File `m212-portfolio.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 18509 strings out of 479618
- 356293 string characters out of 2857863
+ 18507 strings out of 479618
+ 356279 string characters out of 2857863
  652055 words of memory out of 3000000
  35227 multiletter control sequences out of 15000+200000
  413717 words of font info for 66 fonts, out of 3000000 for 9000
@@ -890,9 +890,9 @@ e1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Lafe Wessel - Laptop/AppData/Local/Pr
 ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Lafe Wessel -
  Laptop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm1
 0.pfb>
-Output written on m212-portfolio.pdf (17 pages, 234177 bytes).
+Output written on m212-portfolio.pdf (17 pages, 233593 bytes).
 PDF statistics:
- 236 PDF objects out of 1000 (max. 8388607)
- 65 named destinations out of 1000 (max. 500000)
+ 234 PDF objects out of 1000 (max. 8388607)
+ 63 named destinations out of 1000 (max. 500000)
  109 words of extra memory for PDF output out of 10000 (max. 10000000)
 
